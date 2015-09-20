@@ -1,3 +1,3 @@
 # どうもありがとうミスターロボート
 
-<p class="fragment">Thank You Very Much, Mr. Robot</p>
+<p class="small">* I don't speak Japanese. This was copy/pasted from Wikipedia</p>
