@@ -1,0 +1,436 @@
+a.reveal .ibm-header,
+.content-info .intro-design-logo {
+  background: rgba(253, 253, 253, .75);
+}
+
+/**
+  * Background States
+**/
+.reveal .state-background {
+  background-repeat: no-repeat;
+}
+
+.vase .state-background {
+  background-image: url('../images/vase.jpg');
+  background-position: center;
+  background-size: 60vh;
+  background-position: right;
+}
+
+.flowers .state-background {
+  background-image: url('../images/red-gerbera.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.dark .slide-background {
+  background: #121212;
+}
+
+.design-camp .state-background {
+  background-image: url('../images/design-camp.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.design-thinking .slide-background {
+  background-image: url('../images/design-thinking.svg');
+  background-size: 107%;
+  background-position: 12vw center;
+  transition: opacity .3s;
+}
+
+.dt-rad .slide-background {
+  background-image: url('../images/dt-rad.svg');
+  background-size: 107%;
+  background-position: 12vw center;
+}
+
+.empathy-map .slide-background {
+  background-image: url('../images/empathy-map.svg');
+  background-position: center;
+  background-size: 60vh;
+}
+
+.value-map .slide-background {
+  background-image: url('../images/difficlty-value.svg');
+  background-position: center;
+  background-size: 90vh;
+}
+
+.galaxy .slide-background {
+  background-image: url('../images/galaxy.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.challenge .slide-background {
+  background-image: url('../images/challenge.jpg');;
+  background-position: center;
+  background-size: cover;
+}
+
+/**
+  * Custom state styling
+**/
+section[data-state~='flowers'] h2 {
+  text-align: right;
+  width: 30vw;
+  float: right;
+}
+
+section[data-state~='design-camp'] h2,
+section[data-state~='design-thinking'] h2,
+section[data-state~='dt-rad'] h2,
+section[data-state~='empathy-map'] h2,
+section[data-state~='value-map'] h2,
+section[data-state~='challenge'] h2 {
+  color: transparent;
+}
+
+section[data-state~='galaxy'] h2 {
+  color: #fdfdfd;
+  background: rgba(0, 44, 50, .25);
+  padding: 1em .25em;
+  text-align: center;
+}
+
+#time {
+  display: none;
+  float: right;
+}
+
+#section {
+  float: right;
+}
+
+/**
+  * IBM Overrides
+**/
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  color: #006d5d;
+}
+
+.reveal {
+  color: #003c32;
+}
+
+body {
+  background: #fdfdfd;
+}
+
+.reveal .progress span {
+  background: #d74108;
+}
+
+.labeled-list dt {
+  margin-bottom: 0;
+}
+
+.labeled-list dd {
+  color: #006d5d;
+  font-weight: normal;
+  margin-left: 1.5rem;
+  margin-top: .5em;
+  line-height: 1.3em;
+}
+
+.reveal a:not(.image) {
+  color: #d74108;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to top, #fdfdfd 75%, #d74108 75%);
+  background-size: 0.125em 0.1875em;
+  background-position: 0 1.084  em;
+  text-shadow: 0.0625em 0.0625em 0 #fdfdfd, -0.0625em 0 0 #fdfdfd;
+}
+
+.reveal a:not(.image):hover {
+  color: #872a0f;
+  background-image: linear-gradient(to top, #fdfdfd 75%, #872a0f 75%);
+}
+
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #008571;
+}
+.reveal .controls div.navigate-left:hover,
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #41d6c3;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #008571;
+}
+.reveal .controls div.navigate-down:hover,
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #41d6c3;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #008571;
+}
+.reveal .controls div.navigate-right:hover,
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #41d6c3;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #008571;
+}
+.reveal .controls div.navigate-up:hover,
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #41d6c3;
+}
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+ // This file has been copied over from
+ // ../../bower_components/reveal.js/css/theme/source/black.scss
+
+ // See ../../bower_components/reveal.js/css/theme/README.md
+ // for further explanations on how to create a custom reveal.js theme.
+
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+/**
+ * IBM Design Theme
+ * Made with love for the designers
+ * and developers of IBM <3 Una
+ */
+
+@import "../../bower_components/sass-toolkit/stylesheets/toolkit";
+@import "../../bower_components/ibm-colors/ibm-colors";
+
+
+//Typography
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: $font-stack;
+$mainColor: #000;
+$headingFont: $font-stack;
+$mainColor: color('teal', 80);
+$headingColor: color('teal', 50);
+$backgroundColor: color('white');
+$linkColor: color('teal', 50);
+$linkColorHover: color-tint($linkColor, 2);
+$selectionBackgroundColor: color('teal', 80);
+$headingTextShadow: none;
+$heading1TextShadow: $headingTextShadow;
+$headingTextTransform: initial;
+$mainFontSize: 24px;
+$headingLineHeight: 1.2;
+
+// Override the settings that we don't have options for
+$defaultLineHeight: 1.5;
+
+.reveal {
+    font-weight: 200 !important;
+
+    img { //oh reveal -__- your css makes me so sad
+        border: none !important;
+        box-shadow: none !important;
+
+        &.center {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .slides {
+        text-align: left;
+
+    .dark & {
+      blockquote {
+        color: color('white') !important;
+      }
+    }
+    }
+
+  pre {
+    font-size: 1em;
+  }
+
+    code {
+        color: $headingColor;
+        background: color('neutral-white', 30);
+        outline: 1px solid color('gray', 10);
+        padding: 0 .25em;
+    }
+
+    p {
+        line-height: $defaultLineHeight;
+    }
+
+  ol, ul {
+    line-height: $defaultLineHeight;
+  }
+
+    h1 {
+        font-weight: 300;
+    }
+
+    blockquote {
+        font-style: normal;
+        box-shadow: none;
+        font-size: $mainFontSize*2;
+        line-height: $headingLineHeight*1.2;
+        width: 100%;
+
+        footer {
+            text-align: right;
+            font-size: 80%;
+        }
+
+        em {
+            color: $headingColor;
+        }
+    }
+
+  .ibm-header {
+    position: absolute;
+    top: 0;
+    z-index: 13;
+    display: block;
+    width: 100%;
+    height: 2em;
+    border-bottom: 1px solid color('gray', 30);
+    background-color: color('white');
+
+    .header-logo {
+      @extend %weight-switch;
+      padding: .4em .8em;
+      text-align: left;
+    }
+  }
+}
+
+.intro-slide {
+    ul {
+        margin: 4em 0 0 0;
+    }
+
+    li {
+        list-style: none;
+        color: $headingColor;
+
+        &:first-child {
+            font-weight: 800;
+        }
+    }
+}
+
+.content-info {
+    background: color('white');
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+    width: 100%;
+    text-align: left;
+
+    .intro-design-logo {
+        padding: .4em .8em;
+        width: 100%;
+        background: color('white');
+        position: absolute;
+        display: block;
+    }
+
+    .confidential-mark {
+        font-size: 50%;
+        padding: 1.3em 2em;
+        font-weight: 200;
+        margin-bottom: 0;
+        color: color('gray', 30);
+    }
+}
+
+%weight-switch {
+  .ibm {
+    font-weight: 200;
+  }
+  .design {
+    font-weight: 800;
+  }
+}
+
+.intro-design-logo {
+    background: color('white');
+    position: absolute;
+    bottom: 0;
+    z-index: 12;
+    width: 100%;
+}
+
+.intro-design-logo {
+    @extend %weight-switch;
+}
+
+// labeled lists (like the hills list)
+.labeled-list{
+    dd {
+        font-size: 120%;
+        color: $headingColor;
+        margin-bottom: .25em;
+        font-weight: 800;
+    }
+    dt {
+        margin-bottom: 1.5em;
+        line-height: $defaultLineHeight;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+%half {
+    width: 45%;
+    padding: 0 2.5%;
+}
+
+.half-left {
+    @extend %half;
+    float: left;
+}
+
+.half-right {
+    @extend %half;
+    float: right;
+}
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+.reveal a:not(.image) {
+  @include underline(#fff, #4178be, $distance: .98);
+
+  &:hover {
+    @include underline(#fff, #8daed8, $distance: .98);
+  }
+
+  .dark & {
+    @include underline(#000, #4178be, $distance: .98);
+
+    &:hover {
+      @include underline(#000, #8daed8, $distance: .98);
+    }
+  }
+}
+
+.slide-background {
+  .dark & {
+    background: color('black');
+  }
+}
