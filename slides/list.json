@@ -1,1 +1,35 @@
-["index.md"]
+[
+    "index.md",
+    "into-slides.html",
+    [
+        {
+            "filename": "cognitive-computing.html",
+            "attr": {
+                "data-state": "welcome"
+            }
+        },
+        "what-is-cc.html",
+        "how-can-cc-help-me.html"
+    ],
+    [
+        "examples.html",
+        {
+            "filename": "dance.html",
+            "attr": {
+                "data-state": "dance"
+            }
+        }
+    ],
+    [
+        "be-kind.html",
+        "babel-fish.html",
+        "chef-watson.html"
+    ],
+    {
+        "filename": "boogie.html",
+        "attr": {
+            "data-state": "boogie"
+        }
+    },
+    "thanks.html"
+]
