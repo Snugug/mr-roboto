@@ -1,34 +1,35 @@
 [
     "index.md",
     "into-slides.html",
-    "intro.html",
     [
-        "distributed.html",
-        "svn-style.html",
-        "github-workflow.html",
-        "dictatorlieutenants-workflow.html"
+        {
+            "filename": "cognitive-computing.html",
+            "attr": {
+                "data-state": "welcome"
+            }
+        },
+        "what-is-cc.html",
+        "how-can-cc-help-me.html"
     ],
     [
-        "branching.html",
-        "a-branch.html"
+        "examples.html",
+        {
+            "filename": "dance.html",
+            "attr": {
+                "data-state": "dance"
+            }
+        }
     ],
     [
-        "staging.html",
-        "a-staging.html"
+        "be-kind.html",
+        "babel-fish.html",
+        "chef-watson.html"
     ],
-    [
-        "data-assurance.html",
-        "data-assurance-example.html"
-    ],
-    [
-        "working-with-git.html",
-        "clone.html",
-        "remotes.html",
-        "git-branching.html",
-        "committing.html",
-        "pulling.html",
-        "pushing.html"
-    ],
-    "github-flow.html",
+    {
+        "filename": "boogie.html",
+        "attr": {
+            "data-state": "boogie"
+        }
+    },
     "thanks.html"
 ]
